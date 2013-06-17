@@ -1,0 +1,102 @@
+<body>
+<br>
+<br>
+addthis tweak:&nbsp;<br>
+<br>
+&lt;?php&nbsp; runTweak( 'template-addthis' ); ?&gt;<br>
+<br>
+sblog tweak:&nbsp;<br>
+<br>
+&lt;?php&nbsp;runTweak('sblog-page') ?&gt;<br>
+<br>
+contact tweak:<br>
+<br>
+&lt;?php&nbsp; display_contact_form(); ?&gt;<br>
+<br>
+dropdown tweak:<br>
+<br>
+&lt;?php runTweak('menu-show'); ?&gt;&nbsp;<br>
+<br>
+chamar search tweak:<br>
+<br>
+&nbsp;&lt;?php runTweak('search','found'); ?&gt;<br>
+<br>
+onde found e uma pagina nova criada com o nome found no backend.<br>
+found depois devera estar escondida, ou seja, nao deve aparecer no<br>
+frontend por questoes esteticas<br>
+<br>
+&lt;?php runTweak("search_results"); ?&gt;<br>
+<br>
+esta linha devera ficar dentro da pagina found<br>
+<br>
+chamar lightbox:<br>
+no head do index:<br>
+<br>
+&lt;link rel="stylesheet" type="text/css"<br>
+href="boss/tweaks/lightbox_plus/lightbox.css"&gt;<br>
+&lt;script src="boss/tweaks/lightbox_plus/spica.js"<br>
+type="text/javascript"&gt;&lt;/script&gt;<br>
+&lt;script src="boss/tweaks/lightbox_plus/lightbox_plus.js"<br>
+type="text/javascript"&gt;&lt;/script&gt;<br>
+<br>
+<br>
+depois aplicar o codigo na imagem pretendida:<br>
+<br>
+&lt;a href="image.png"&gt;&nbsp;&lt;img<br>
+class="thumbnail" src="image.png"&gt;&lt;/a&gt;<br>
+<br>
+<br>
+pra fazer templates e muito simples:<br>
+<br>
+&lt;?php &nbsp;require_once("boss/setting.php"); ?&gt;<br>
+<br>
+colocar sempre esta linha para chamar o backend do nanocms (e sempre a<br>
+primeira linha)<br>
+<br>
+chamar o titulo dinamico:<br>
+<br>
+&nbsp;&nbsp; &nbsp;&lt;title&gt;&lt;?php<br>
+show_title(); ?&gt;&lt;/title&gt;<br>
+<br>
+chamar areas especificas:<br>
+<br>
+&lt;?php&nbsp; show_content_area('WebSite Name'); ?&gt;<br>
+&nbsp;&nbsp; &lt;?php show_content_area('WebSite slogan');<br>
+?&gt;<br>
+<br>
+<br>
+chamar menu lateral:<br>
+<br>
+&nbsp;&nbsp; &nbsp; &lt;?php show_sidebar(); ?&gt;<br>
+<br>
+chamar extra menus:<br>
+<br>
+&lt;?php show_content_area("Left Navigation Top"); ?&gt;<br>
+&lt;?php show_content_area("Left Navigation Bottom"); ?&gt;<br>
+<br>
+chamar conteudo:<br>
+<br>
+&lt;?php show_content_slug(); ?&gt;<br>
+<br>
+<br>
+chamar outras paginas:<br>
+<br>
+&lt;?php show_links('other-pages'); ?&gt;<br>
+<br>
+criar novas content areas:<br>
+<br>
+&nbsp;&lt;?php show_content_area('social'); ?&gt;&nbsp;<br>
+&nbsp;&nbsp;&lt;?php show_content_area('links');<br>
+?&gt;&nbsp;<br>
+<br>
+basta colocar dentro das plicas o nome desejado, nestes 2 casos e<br>
+social e links<br>
+<br>
+chamar footer copyright:<br>
+<br>
+&lt;?php show_content_area('Copyright Notice'); ?&gt;<br>
+<br>
+<br>
+<br>
+<br>
+</body>

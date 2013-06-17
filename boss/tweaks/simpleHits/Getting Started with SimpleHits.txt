@@ -1,0 +1,19 @@
+SimpleHits Tweaker for NanoCMS 0.4
+
+Written by bjazmoore (AKA: Brad Moore)
+  email at: bjazmoore@gmail.com
+
+Version 1.0
+released under the GPL - version 2 (see it here: http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
+
+**INSTALLING**
+
+1) Decompress the zip file.
+2) Copy the tweaker file simpleHits.php to the /data/tweaks folder.
+3) Copy (from the archive) or create a folder called simpleHits in the /data/tweaks folder.
+4) Make the simpleHits folder world write-able.
+5) Log into your nanoCMS site and enter the Admin panel.
+6) Activate the simpleHits Tweak
+7) Configure the tweak via the tweak interface
+
+Have Fun!

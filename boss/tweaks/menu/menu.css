@@ -1,0 +1,10 @@
+.pageListTable{
+   border:1px solid #c3d9ff;
+   width: 60%;
+}
+.pageListTable input{
+   width: 100%;
+}
+.pageListTable select{
+   width: 100%;
+}

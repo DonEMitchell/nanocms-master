@@ -1,0 +1,20 @@
+This Tweak will give you view over all logins in
+your NanoCMS  Admin Panel.
+
+Nice to see if something wrong happens on Our login page.
+On every login attempt, it will make a line in bottom of the file.
+You can delete manualy if it will grow to large in size.
+
+Sample logfile.txt
+--------------------------------------------------------------------------------------------
+Username Password  ServerTime  Day/Month/Date/Year  IP
+---------------- This Logfile is created date 01-01-09 ----------------------
+
+test|test | 00:00 PM | Thursday, January 01th, 2009 | 127.0.0.1
+
+---------------------------------------------------------------------------------------------
+
+Folder:  tweaks/login_log/logfile.txt needs chmod 666 at least. 
+
+You just have to copy login_log folder and login_log.php to the 
+Tweak location.  Activate in the Admin Panel.
