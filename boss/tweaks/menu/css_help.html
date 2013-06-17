@@ -1,0 +1,113 @@
+<hr />
+<h2>Install menu</h2>
+<p>Now you need to:
+<ul><li>Add the code: <code>&lt;?php runTweak('menu-show'); ?&gt;</code> where you want the dropdown menu</li>
+    <li>Change style.css to add something like the following CSS code (play with this code to change colors, size, font...etc)
+<pre>
+/* =================================================================
+Style for drop down menu
+=================================================================== */
+/* commom style for all browsers */
+.menu {
+    text-align:left;
+    font-family: verdana, sans-serif;
+    position:relative;
+    font-size:0.9em;
+    height:2.5em;
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.menu ul {
+    padding:0; margin:0;
+    list-style-type:none; /* for Firefox */
+}
+.menu li {
+    float:left;
+    position:relative;
+}
+.menu li a, .menu li a:visited {
+    display:block;
+    text-decoration:none;
+    width:6em;
+    color:#000;
+    float:left;
+    padding-right:1em;
+    height:3em;
+    line-height:3em;
+    color:#909;
+}
+* html .menu li a, .menu li a:visited {
+    width:7em; w\idth:6em; /* hack for IE5.5 */
+}
+/*.menu li a.drop, .menu li a.drop:visited {
+    font-weight:bold;
+}    */
+.menu li ul {
+    visibility:hidden;
+    position:absolute;
+    top:2.5em;
+    left:0;
+    height:0;
+    overflow:hidden;
+}
+.menu table {
+    margin:-1px;
+    border-collapse:collapse;
+    font-size:1em; /* font size for IE5.5 */
+}
+
+/* fist line style for IE7 and non-IE browsers and the second line for IE5.5 and IE6 */
+.menu li:hover a,
+.menu li a:hover {
+    text-decoration:underline;
+    border:0;
+}
+.menu li:hover ul,
+.menu li a:hover ul {
+    visibility:visible;
+    height:auto;
+    width:10em;
+    background:#dae8ff;
+    border:1px solid #ddd;
+    left:0;
+    top:2.5em;
+    overflow:visible;
+}
+.menu li:hover ul li a,
+.menu li a:hover ul li a {
+    display:block;
+    font-weight:normal;
+    background:transparent;
+    text-decoration:none;
+    height:auto;
+    line-height:1.5em;
+    padding:0.5em;
+    width:9em;
+}
+* html .menu li a:hover ul li a {
+    width:10em; w\idth:9em; /* hack for IE5.5 */
+}
+.menu li:hover ul li a.drop,
+.menu li a:hover ul li a.drop {
+    font-weight:bold;
+}
+.menu li:hover ul li ul,
+.menu li a:hover ul li a ul {
+    visibility:hidden;
+    position:absolute;
+    top:0;
+    left:9.5em;
+    height:0;
+    overflow:hidden;
+}
+.menu li:hover ul li a:hover,
+.menu li a:hover ul li a:hover {
+    text-decoration:underline;
+}
+.submenu{
+    width: 10em;
+}
+</pre>
+</li>
+</ul>

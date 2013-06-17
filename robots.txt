@@ -1,0 +1,13 @@
+# default robots.txt
+
+User-agent: *
+Disallow: /boss/admin-design/
+Disallow: /boss/areas/
+Disallow: /boss/libs/
+Disallow: /boss/pages/
+Disallow: /boss/tweaks/
+Disallow: /boss/index.php
+Disallow: /boss/nanoadmin.php
+Disallow: /boss/pagesdata.txt
+Disallow: /logs/
+Disallow: /usage/
