@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#social links
 
 = social links - como criar links dos posts do tweak sblog =
 
