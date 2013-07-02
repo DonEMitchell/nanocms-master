@@ -1,0 +1,5 @@
+#summary One-sentence summary of this page.
+
+= social links - como criar links dos posts do tweak sblog =
+
+Poise, preciso de saber como criar o link de um post do sblog ao inves de ter um link fixo do site no tweak dos links sociais.
