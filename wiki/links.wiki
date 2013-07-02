@@ -1,3 +1,4 @@
+#labels social,links,sblog
 #social links
 
 = social links - como criar links dos posts do tweak sblog =
