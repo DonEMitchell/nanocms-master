@@ -1,0 +1,1 @@
+master edition is based on community version of nanocms, a cms not anymore in development by the original developers, so i decided to develop a branch of it. enjoy and give me feedback to improve this! thanks
